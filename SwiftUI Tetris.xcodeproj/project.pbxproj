@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		8046556C2A118FA0009BAF49 /* SwiftUI Tetris Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8046556B2A118FA0009BAF49 /* SwiftUI Tetris Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		804655712A118FA0009BAF49 /* SwiftUI_TetrisApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804655702A118FA0009BAF49 /* SwiftUI_TetrisApp.swift */; };
-		804655732A118FA0009BAF49 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804655722A118FA0009BAF49 /* ContentView.swift */; };
 		804655752A118FA0009BAF49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 804655742A118FA0009BAF49 /* Assets.xcassets */; };
 		804655782A118FA0009BAF49 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 804655772A118FA0009BAF49 /* Preview Assets.xcassets */; };
 		804655822A118FA0009BAF49 /* SwiftUI_Tetris_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804655812A118FA0009BAF49 /* SwiftUI_Tetris_Watch_AppTests.swift */; };
 		8046558C2A118FA0009BAF49 /* SwiftUI_Tetris_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8046558B2A118FA0009BAF49 /* SwiftUI_Tetris_Watch_AppUITests.swift */; };
 		8046558E2A118FA0009BAF49 /* SwiftUI_Tetris_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8046558D2A118FA0009BAF49 /* SwiftUI_Tetris_Watch_AppUITestsLaunchTests.swift */; };
+		8046559F2A118FC2009BAF49 /* TetrisBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8046559E2A118FC2009BAF49 /* TetrisBoard.swift */; };
+		804655A12A118FC6009BAF49 /* TetrisContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804655A02A118FC6009BAF49 /* TetrisContentView.swift */; };
+		804655A32A118FD3009BAF49 /* TetrisPiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804655A22A118FD3009BAF49 /* TetrisPiece.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,7 +61,6 @@
 		804655652A118FA0009BAF49 /* SwiftUI Tetris.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI Tetris.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8046556B2A118FA0009BAF49 /* SwiftUI Tetris Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI Tetris Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		804655702A118FA0009BAF49 /* SwiftUI_TetrisApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_TetrisApp.swift; sourceTree = "<group>"; };
-		804655722A118FA0009BAF49 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		804655742A118FA0009BAF49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		804655772A118FA0009BAF49 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8046557D2A118FA0009BAF49 /* SwiftUI Tetris Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI Tetris Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,6 +68,9 @@
 		804655872A118FA0009BAF49 /* SwiftUI Tetris Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI Tetris Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8046558B2A118FA0009BAF49 /* SwiftUI_Tetris_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Tetris_Watch_AppUITests.swift; sourceTree = "<group>"; };
 		8046558D2A118FA0009BAF49 /* SwiftUI_Tetris_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Tetris_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8046559E2A118FC2009BAF49 /* TetrisBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TetrisBoard.swift; sourceTree = "<group>"; };
+		804655A02A118FC6009BAF49 /* TetrisContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TetrisContentView.swift; sourceTree = "<group>"; };
+		804655A22A118FD3009BAF49 /* TetrisPiece.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TetrisPiece.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,7 +123,9 @@
 			isa = PBXGroup;
 			children = (
 				804655702A118FA0009BAF49 /* SwiftUI_TetrisApp.swift */,
-				804655722A118FA0009BAF49 /* ContentView.swift */,
+				8046559E2A118FC2009BAF49 /* TetrisBoard.swift */,
+				804655A02A118FC6009BAF49 /* TetrisContentView.swift */,
+				804655A22A118FD3009BAF49 /* TetrisPiece.swift */,
 				804655742A118FA0009BAF49 /* Assets.xcassets */,
 				804655762A118FA0009BAF49 /* Preview Content */,
 			);
@@ -309,8 +315,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				804655732A118FA0009BAF49 /* ContentView.swift in Sources */,
+				804655A32A118FD3009BAF49 /* TetrisPiece.swift in Sources */,
+				8046559F2A118FC2009BAF49 /* TetrisBoard.swift in Sources */,
 				804655712A118FA0009BAF49 /* SwiftUI_TetrisApp.swift in Sources */,
+				804655A12A118FC6009BAF49 /* TetrisContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
