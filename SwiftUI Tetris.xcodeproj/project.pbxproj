@@ -1,0 +1,693 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8046556C2A118FA0009BAF49 /* SwiftUI Tetris Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8046556B2A118FA0009BAF49 /* SwiftUI Tetris Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		804655712A118FA0009BAF49 /* SwiftUI_TetrisApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804655702A118FA0009BAF49 /* SwiftUI_TetrisApp.swift */; };
+		804655732A118FA0009BAF49 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804655722A118FA0009BAF49 /* ContentView.swift */; };
+		804655752A118FA0009BAF49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 804655742A118FA0009BAF49 /* Assets.xcassets */; };
+		804655782A118FA0009BAF49 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 804655772A118FA0009BAF49 /* Preview Assets.xcassets */; };
+		804655822A118FA0009BAF49 /* SwiftUI_Tetris_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804655812A118FA0009BAF49 /* SwiftUI_Tetris_Watch_AppTests.swift */; };
+		8046558C2A118FA0009BAF49 /* SwiftUI_Tetris_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8046558B2A118FA0009BAF49 /* SwiftUI_Tetris_Watch_AppUITests.swift */; };
+		8046558E2A118FA0009BAF49 /* SwiftUI_Tetris_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8046558D2A118FA0009BAF49 /* SwiftUI_Tetris_Watch_AppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8046556D2A118FA0009BAF49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8046555F2A118FA0009BAF49 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8046556A2A118FA0009BAF49;
+			remoteInfo = "SwiftUI Tetris Watch App";
+		};
+		8046557E2A118FA0009BAF49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8046555F2A118FA0009BAF49 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8046556A2A118FA0009BAF49;
+			remoteInfo = "SwiftUI Tetris Watch App";
+		};
+		804655882A118FA0009BAF49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8046555F2A118FA0009BAF49 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8046556A2A118FA0009BAF49;
+			remoteInfo = "SwiftUI Tetris Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		804655942A118FA0009BAF49 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				8046556C2A118FA0009BAF49 /* SwiftUI Tetris Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		804655652A118FA0009BAF49 /* SwiftUI Tetris.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI Tetris.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8046556B2A118FA0009BAF49 /* SwiftUI Tetris Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI Tetris Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		804655702A118FA0009BAF49 /* SwiftUI_TetrisApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_TetrisApp.swift; sourceTree = "<group>"; };
+		804655722A118FA0009BAF49 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		804655742A118FA0009BAF49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		804655772A118FA0009BAF49 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8046557D2A118FA0009BAF49 /* SwiftUI Tetris Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI Tetris Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		804655812A118FA0009BAF49 /* SwiftUI_Tetris_Watch_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Tetris_Watch_AppTests.swift; sourceTree = "<group>"; };
+		804655872A118FA0009BAF49 /* SwiftUI Tetris Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI Tetris Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8046558B2A118FA0009BAF49 /* SwiftUI_Tetris_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Tetris_Watch_AppUITests.swift; sourceTree = "<group>"; };
+		8046558D2A118FA0009BAF49 /* SwiftUI_Tetris_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Tetris_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		804655682A118FA0009BAF49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8046557A2A118FA0009BAF49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		804655842A118FA0009BAF49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8046555E2A118FA0009BAF49 = {
+			isa = PBXGroup;
+			children = (
+				8046556F2A118FA0009BAF49 /* SwiftUI Tetris Watch App */,
+				804655802A118FA0009BAF49 /* SwiftUI Tetris Watch AppTests */,
+				8046558A2A118FA0009BAF49 /* SwiftUI Tetris Watch AppUITests */,
+				804655662A118FA0009BAF49 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		804655662A118FA0009BAF49 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				804655652A118FA0009BAF49 /* SwiftUI Tetris.app */,
+				8046556B2A118FA0009BAF49 /* SwiftUI Tetris Watch App.app */,
+				8046557D2A118FA0009BAF49 /* SwiftUI Tetris Watch AppTests.xctest */,
+				804655872A118FA0009BAF49 /* SwiftUI Tetris Watch AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8046556F2A118FA0009BAF49 /* SwiftUI Tetris Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				804655702A118FA0009BAF49 /* SwiftUI_TetrisApp.swift */,
+				804655722A118FA0009BAF49 /* ContentView.swift */,
+				804655742A118FA0009BAF49 /* Assets.xcassets */,
+				804655762A118FA0009BAF49 /* Preview Content */,
+			);
+			path = "SwiftUI Tetris Watch App";
+			sourceTree = "<group>";
+		};
+		804655762A118FA0009BAF49 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				804655772A118FA0009BAF49 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		804655802A118FA0009BAF49 /* SwiftUI Tetris Watch AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				804655812A118FA0009BAF49 /* SwiftUI_Tetris_Watch_AppTests.swift */,
+			);
+			path = "SwiftUI Tetris Watch AppTests";
+			sourceTree = "<group>";
+		};
+		8046558A2A118FA0009BAF49 /* SwiftUI Tetris Watch AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8046558B2A118FA0009BAF49 /* SwiftUI_Tetris_Watch_AppUITests.swift */,
+				8046558D2A118FA0009BAF49 /* SwiftUI_Tetris_Watch_AppUITestsLaunchTests.swift */,
+			);
+			path = "SwiftUI Tetris Watch AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		804655642A118FA0009BAF49 /* SwiftUI Tetris */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 804655952A118FA0009BAF49 /* Build configuration list for PBXNativeTarget "SwiftUI Tetris" */;
+			buildPhases = (
+				804655632A118FA0009BAF49 /* Resources */,
+				804655942A118FA0009BAF49 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8046556E2A118FA0009BAF49 /* PBXTargetDependency */,
+			);
+			name = "SwiftUI Tetris";
+			productName = "SwiftUI Tetris";
+			productReference = 804655652A118FA0009BAF49 /* SwiftUI Tetris.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		8046556A2A118FA0009BAF49 /* SwiftUI Tetris Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 804655912A118FA0009BAF49 /* Build configuration list for PBXNativeTarget "SwiftUI Tetris Watch App" */;
+			buildPhases = (
+				804655672A118FA0009BAF49 /* Sources */,
+				804655682A118FA0009BAF49 /* Frameworks */,
+				804655692A118FA0009BAF49 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SwiftUI Tetris Watch App";
+			productName = "SwiftUI Tetris Watch App";
+			productReference = 8046556B2A118FA0009BAF49 /* SwiftUI Tetris Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8046557C2A118FA0009BAF49 /* SwiftUI Tetris Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 804655982A118FA0009BAF49 /* Build configuration list for PBXNativeTarget "SwiftUI Tetris Watch AppTests" */;
+			buildPhases = (
+				804655792A118FA0009BAF49 /* Sources */,
+				8046557A2A118FA0009BAF49 /* Frameworks */,
+				8046557B2A118FA0009BAF49 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8046557F2A118FA0009BAF49 /* PBXTargetDependency */,
+			);
+			name = "SwiftUI Tetris Watch AppTests";
+			productName = "SwiftUI Tetris Watch AppTests";
+			productReference = 8046557D2A118FA0009BAF49 /* SwiftUI Tetris Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		804655862A118FA0009BAF49 /* SwiftUI Tetris Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8046559B2A118FA0009BAF49 /* Build configuration list for PBXNativeTarget "SwiftUI Tetris Watch AppUITests" */;
+			buildPhases = (
+				804655832A118FA0009BAF49 /* Sources */,
+				804655842A118FA0009BAF49 /* Frameworks */,
+				804655852A118FA0009BAF49 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				804655892A118FA0009BAF49 /* PBXTargetDependency */,
+			);
+			name = "SwiftUI Tetris Watch AppUITests";
+			productName = "SwiftUI Tetris Watch AppUITests";
+			productReference = 804655872A118FA0009BAF49 /* SwiftUI Tetris Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8046555F2A118FA0009BAF49 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					804655642A118FA0009BAF49 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					8046556A2A118FA0009BAF49 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					8046557C2A118FA0009BAF49 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 8046556A2A118FA0009BAF49;
+					};
+					804655862A118FA0009BAF49 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 8046556A2A118FA0009BAF49;
+					};
+				};
+			};
+			buildConfigurationList = 804655622A118FA0009BAF49 /* Build configuration list for PBXProject "SwiftUI Tetris" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8046555E2A118FA0009BAF49;
+			productRefGroup = 804655662A118FA0009BAF49 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				804655642A118FA0009BAF49 /* SwiftUI Tetris */,
+				8046556A2A118FA0009BAF49 /* SwiftUI Tetris Watch App */,
+				8046557C2A118FA0009BAF49 /* SwiftUI Tetris Watch AppTests */,
+				804655862A118FA0009BAF49 /* SwiftUI Tetris Watch AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		804655632A118FA0009BAF49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		804655692A118FA0009BAF49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				804655782A118FA0009BAF49 /* Preview Assets.xcassets in Resources */,
+				804655752A118FA0009BAF49 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8046557B2A118FA0009BAF49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		804655852A118FA0009BAF49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		804655672A118FA0009BAF49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				804655732A118FA0009BAF49 /* ContentView.swift in Sources */,
+				804655712A118FA0009BAF49 /* SwiftUI_TetrisApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		804655792A118FA0009BAF49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				804655822A118FA0009BAF49 /* SwiftUI_Tetris_Watch_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		804655832A118FA0009BAF49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8046558C2A118FA0009BAF49 /* SwiftUI_Tetris_Watch_AppUITests.swift in Sources */,
+				8046558E2A118FA0009BAF49 /* SwiftUI_Tetris_Watch_AppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8046556E2A118FA0009BAF49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8046556A2A118FA0009BAF49 /* SwiftUI Tetris Watch App */;
+			targetProxy = 8046556D2A118FA0009BAF49 /* PBXContainerItemProxy */;
+		};
+		8046557F2A118FA0009BAF49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8046556A2A118FA0009BAF49 /* SwiftUI Tetris Watch App */;
+			targetProxy = 8046557E2A118FA0009BAF49 /* PBXContainerItemProxy */;
+		};
+		804655892A118FA0009BAF49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8046556A2A118FA0009BAF49 /* SwiftUI Tetris Watch App */;
+			targetProxy = 804655882A118FA0009BAF49 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8046558F2A118FA0009BAF49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		804655902A118FA0009BAF49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		804655922A118FA0009BAF49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI Tetris Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 82VXL6987H;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "SwiftUI Tetris";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.sundresh.SwiftUI-Tetris.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Debug;
+		};
+		804655932A118FA0009BAF49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI Tetris Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 82VXL6987H;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "SwiftUI Tetris";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.sundresh.SwiftUI-Tetris.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Release;
+		};
+		804655962A118FA0009BAF49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 82VXL6987H;
+				INFOPLIST_KEY_CFBundleDisplayName = "SwiftUI Tetris";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.sundresh.SwiftUI-Tetris";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		804655972A118FA0009BAF49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 82VXL6987H;
+				INFOPLIST_KEY_CFBundleDisplayName = "SwiftUI Tetris";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.sundresh.SwiftUI-Tetris";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		804655992A118FA0009BAF49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 82VXL6987H;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.sundresh.SwiftUI-Tetris-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftUI Tetris Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SwiftUI Tetris Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Debug;
+		};
+		8046559A2A118FA0009BAF49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 82VXL6987H;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.sundresh.SwiftUI-Tetris-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftUI Tetris Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SwiftUI Tetris Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Release;
+		};
+		8046559C2A118FA0009BAF49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 82VXL6987H;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.sundresh.SwiftUI-Tetris-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "SwiftUI Tetris Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Debug;
+		};
+		8046559D2A118FA0009BAF49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 82VXL6987H;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.sundresh.SwiftUI-Tetris-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "SwiftUI Tetris Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		804655622A118FA0009BAF49 /* Build configuration list for PBXProject "SwiftUI Tetris" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8046558F2A118FA0009BAF49 /* Debug */,
+				804655902A118FA0009BAF49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		804655912A118FA0009BAF49 /* Build configuration list for PBXNativeTarget "SwiftUI Tetris Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				804655922A118FA0009BAF49 /* Debug */,
+				804655932A118FA0009BAF49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		804655952A118FA0009BAF49 /* Build configuration list for PBXNativeTarget "SwiftUI Tetris" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				804655962A118FA0009BAF49 /* Debug */,
+				804655972A118FA0009BAF49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		804655982A118FA0009BAF49 /* Build configuration list for PBXNativeTarget "SwiftUI Tetris Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				804655992A118FA0009BAF49 /* Debug */,
+				8046559A2A118FA0009BAF49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8046559B2A118FA0009BAF49 /* Build configuration list for PBXNativeTarget "SwiftUI Tetris Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8046559C2A118FA0009BAF49 /* Debug */,
+				8046559D2A118FA0009BAF49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8046555F2A118FA0009BAF49 /* Project object */;
+}
