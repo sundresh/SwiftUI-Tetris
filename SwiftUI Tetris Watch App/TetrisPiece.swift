@@ -75,7 +75,7 @@ struct TetrisPiece: Equatable {
         return relativeBlocks.map { (dx, dy) in (x + dx, y + dy) }
     }
 
-    private var relativeBlocks: [(Int, Int)] {
+    var relativeBlocks: [(Int, Int)] {
         switch shape {
         case .O: return [(0, 0), (1, 0),
                          (0, 1), (1, 1)]

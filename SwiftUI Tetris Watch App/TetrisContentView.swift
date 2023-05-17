@@ -31,8 +31,9 @@ enum SwipeState {
 
 struct TetrisContentView: View {
     // TODO: Set dimensions based on screen size
-    static let blockSize: CGFloat = 9
-    static let blockSpacing: CGFloat = 0.5
+    static let blockSize: CGFloat = 10
+    static let blockSpacing: CGFloat = -1
+    static let gridColor = Color(hue: 0, saturation: 0, brightness: 0.2)
     static let borderPadding: CGFloat = 3
     static let horizontalOffset: CGFloat = -17
     static let swipeLengthForOneBlock: CGFloat = 3*blockSize
@@ -49,6 +50,7 @@ struct TetrisContentView: View {
     init() {
         let tb = tetrisBoard
         timer = Timer(timeInterval: 1.0, repeats: true) { t in
+            print("tick")
             let _ = try? tb.dropPieceOnce()
         }
         RunLoop.main.add(timer!, forMode: .common)
@@ -114,35 +116,59 @@ struct TetrisContentView: View {
     }
 
     var body: some View {
-        ZStack {
-            let movingPieceBlocks = tetrisBoard.movingPiece.blocks
-            Grid(horizontalSpacing: Self.blockSpacing, verticalSpacing: Self.blockSpacing) {
-                ForEach(0..<20) { row in
-                    GridRow {
-                        ForEach(0..<10) { col in
-                            (movingPieceBlocks.contains((col, row)) ? tetrisBoard.movingPiece.color.color : tetrisBoard.staticBoard[row][col].color)
-                                .frame(width: Self.blockSize, height: Self.blockSize)
+        let movingPieceBlocks = tetrisBoard.movingPiece.blocks
+        let nextMovingPieceRelativeBlocks = tetrisBoard.nextMovingPiece.relativeBlocks
+        HStack {
+            ZStack {
+                Grid(horizontalSpacing: Self.blockSpacing, verticalSpacing: Self.blockSpacing) {
+                    ForEach(0..<20) { row in
+                        GridRow {
+                            ForEach(0..<10) { col in
+                                (movingPieceBlocks.contains((col, row)) ? tetrisBoard.movingPiece.color.color : tetrisBoard.staticBoard[row][col].color)
+                                    .frame(width: Self.blockSize, height: Self.blockSize)
+                                    .border(Self.gridColor)
+                            }
                         }
                     }
                 }
-            }.padding(Self.borderPadding)
-            .border(.gray)
-            .onTapGesture {
-                try? tetrisBoard.rotatePiece()
-            }.gesture(swipeGesture)
-            if tetrisBoard.isGameOver {
-                Text("GAME OVER")
-                    .background(.black.opacity(0.35))
+                .padding(Self.borderPadding)
+                .border(.gray)
+                if tetrisBoard.isGameOver {
+                    Text("GAME OVER")
+                        .background(.black.opacity(0.35))
+                }
+                // TODO: Show next piece, number of lines completed, and score
             }
-            // TODO: Show next piece, number of lines completed, and score
-        }.offset(x: Self.horizontalOffset)
+            VStack {
+                Text("NEXT").font(.footnote).foregroundColor(.white)
+                Grid(horizontalSpacing: Self.blockSpacing, verticalSpacing: Self.blockSpacing) {
+                    ForEach(0..<4) { row in
+                        GridRow {
+                            ForEach(0..<4) { col in
+                                (nextMovingPieceRelativeBlocks.contains((col - 1, row)) ? tetrisBoard.nextMovingPiece.color.color :
+                                        .black)
+                                .frame(width: Self.blockSize, height: Self.blockSize)
+                                .border(Self.gridColor)
+                            }
+                        }
+                    }
+                }
+                .background(Color(hue: 0, saturation: 0, brightness: 0.2))
+                .padding(Self.borderPadding)
+                .border(.gray)
+            }
+        }.frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(.black)
         // Pause the game when we switch away from it and unpause when we return to it
         .onChange(of: scenePhase) { phase in
             switch phase {
             case .active: tetrisBoard.isPaused = false
             default: tetrisBoard.isPaused = true
             }
-        }
+        }.onTapGesture {
+            print("tap")
+            try? tetrisBoard.rotatePiece()
+        }.gesture(swipeGesture)
     }
 }
 

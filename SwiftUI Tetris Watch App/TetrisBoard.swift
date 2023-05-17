@@ -39,6 +39,7 @@ class TetrisBoard: ObservableObject {
     }
 
     @Published private(set) var movingPiece: TetrisPiece
+    @Published private(set) var nextMovingPiece: TetrisPiece
     @Published private(set) var staticBoard: [[TetrisBlockColor]] = emptyStaticBoard()
     @Published private(set) var isGameOver: Bool = false
     /// When isPaused is true, non-private methods that modify the state of the game are disabled
@@ -48,6 +49,7 @@ class TetrisBoard: ObservableObject {
 
     init() {
         movingPiece = Self.randomTetrisPiece()
+        nextMovingPiece = Self.randomTetrisPiece()
     }
 
     private static func randomTetrisPiece() -> TetrisPiece {
@@ -140,11 +142,11 @@ class TetrisBoard: ObservableObject {
         } else {
             try add(tetrisPiece: movingPiece)
             clearFullRows()
-            let newMovingPiece = Self.randomTetrisPiece()
-            if !fits(tetrisPiece: newMovingPiece) {
+            if !fits(tetrisPiece: nextMovingPiece) {
                 isGameOver = true
             }
-            movingPiece = newMovingPiece
+            movingPiece = nextMovingPiece
+            nextMovingPiece = Self.randomTetrisPiece()
             return true
         }
     }
