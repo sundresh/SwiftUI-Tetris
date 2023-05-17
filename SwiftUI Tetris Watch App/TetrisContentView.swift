@@ -38,11 +38,13 @@ struct TetrisContentView: View {
     static let swipeLengthForOneBlock: CGFloat = 3*blockSize
     static let minRatioBetweenSwipeAxisAndOtherAxis: CGFloat = 2
 
+    /// scenePhase is used to check for when the app becomes active, inactive or background
+    @Environment(\.scenePhase) var scenePhase
     @ObservedObject var tetrisBoard: TetrisBoard = TetrisBoard()
     @State var currentSwipeAxis: SwipeState = .notSwiping
     @State var swipeDistanceAlreadyAccountedFor: CGFloat = 0
 
-    var timer: Timer? = nil
+    var timer: Timer! = nil
 
     init() {
         let tb = tetrisBoard
@@ -134,6 +136,13 @@ struct TetrisContentView: View {
             }
             // TODO: Show next piece, number of lines completed, and score
         }.offset(x: Self.horizontalOffset)
+        // Pause the game when we switch away from it and unpause when we return to it
+        .onChange(of: scenePhase) { phase in
+            switch phase {
+            case .active: tetrisBoard.isPaused = false
+            default: tetrisBoard.isPaused = true
+            }
+        }
     }
 }
 

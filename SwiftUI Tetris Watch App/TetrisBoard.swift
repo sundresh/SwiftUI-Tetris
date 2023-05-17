@@ -27,6 +27,7 @@ extension [TetrisBlockColor] {
 enum TetrisError: Error {
     case pieceDoesNotFit
     case gameIsOver
+    case gameIsPaused
 }
 
 class TetrisBoard: ObservableObject {
@@ -40,6 +41,10 @@ class TetrisBoard: ObservableObject {
     @Published private(set) var movingPiece: TetrisPiece
     @Published private(set) var staticBoard: [[TetrisBlockColor]] = emptyStaticBoard()
     @Published private(set) var isGameOver: Bool = false
+    /// When isPaused is true, non-private methods that modify the state of the game are disabled
+    /// and throw exceptions. The game will start off paused, so the user interface will need to
+    /// unpause it to start the game.
+    @Published var isPaused: Bool = true
 
     init() {
         movingPiece = Self.randomTetrisPiece()
@@ -73,6 +78,9 @@ class TetrisBoard: ObservableObject {
 
     /// Attempt to rotate the currently moving piece 90 degrees to the left.
     func rotatePiece() throws {
+        // User input should not be possible when the game is paused.
+        guard !isPaused else { throw TetrisError.gameIsPaused }
+
         if isGameOver {
             throw TetrisError.gameIsOver
         }
@@ -85,6 +93,9 @@ class TetrisBoard: ObservableObject {
 
     /// Attempt to move the currently moving piece one block to the left.
     func movePieceLeft() throws {
+        // User input should not be possible when the game is paused.
+        guard !isPaused else { throw TetrisError.gameIsPaused }
+
         if isGameOver {
             throw TetrisError.gameIsOver
         }
@@ -97,6 +108,9 @@ class TetrisBoard: ObservableObject {
 
     /// Attempt to move the currently moving piece one block to the right.
     func movePieceRight() throws {
+        // User input should not be possible when the game is paused.
+        guard !isPaused else { throw TetrisError.gameIsPaused }
+
         if isGameOver {
             throw TetrisError.gameIsOver
         }
@@ -110,6 +124,11 @@ class TetrisBoard: ObservableObject {
     /// Attempt to move the currently moving piece one block down. If it can't move down, add it
     /// to the board and select a new moving piece.
     func dropPieceOnce() throws -> Bool {
+        // User input should not be possible when the game is paused.
+        // While it is possible for a scheduled auto-drop event to occur, the timer handler will
+        // have to deal with the fact that it could get an  exception if the game is paused.
+        guard !isPaused else { throw TetrisError.gameIsPaused }
+
         if isGameOver {
             throw TetrisError.gameIsOver
         }
