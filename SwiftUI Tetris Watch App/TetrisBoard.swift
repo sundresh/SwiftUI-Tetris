@@ -87,7 +87,7 @@ class TetrisBoard: ObservableObject {
             throw TetrisError.gameIsOver
         }
         var copyOfMovingPiece = movingPiece
-        copyOfMovingPiece.rotation = copyOfMovingPiece.rotation.rotateLeft()
+        copyOfMovingPiece.rotation = copyOfMovingPiece.rotation.rotateRight()
         if fits(tetrisPiece: copyOfMovingPiece) {
             movingPiece = copyOfMovingPiece
         }

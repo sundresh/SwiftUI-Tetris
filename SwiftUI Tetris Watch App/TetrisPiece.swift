@@ -49,7 +49,7 @@ struct TetrisPiece: Equatable {
             case .rot0deg: return .rot270deg
             case .rot90deg: return .rot0deg
             case .rot180deg: return .rot90deg
-            case .rot270deg: return .rot270deg
+            case .rot270deg: return .rot180deg
             }
         }
     }
