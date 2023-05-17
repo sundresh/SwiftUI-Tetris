@@ -52,8 +52,18 @@ class TetrisBoard: ObservableObject {
         nextMovingPiece = Self.randomTetrisPiece()
     }
 
-    private static func randomTetrisPiece() -> TetrisPiece {
-        let randomShape = TetrisPiece.Shape.allCases.randomElement()!
+    /// Initialize a random Tetris piece. Attempts to avoid picking cerrtain shapes, as specified
+    /// in the `avoid` array: if there are `n` elements in the array, we pick a random shape up to
+    /// `n` times, to try to find one that is not in the array. This avoids too much repetition
+    /// while still allowing some repetition. (I think the real Tetris actually shuffles the next
+    /// batch of pieces, rather than doing this.)
+    private static func randomTetrisPiece(avoid shapesToAvoid: [TetrisPiece.Shape] = []) -> TetrisPiece {
+        var randomShape = TetrisPiece.Shape.allCases.randomElement()!
+        var numTries = 1
+        while numTries <= shapesToAvoid.count && shapesToAvoid.contains(randomShape) {
+            randomShape = TetrisPiece.Shape.allCases.randomElement()!
+            numTries += 1
+        }
         return TetrisPiece(x: 4, y: 0, rotation: .rot0deg, shape: randomShape)
     }
 
@@ -145,8 +155,10 @@ class TetrisBoard: ObservableObject {
             if !fits(tetrisPiece: nextMovingPiece) {
                 isGameOver = true
             }
+            let previousShape = movingPiece.shape
+            let currentShape = nextMovingPiece.shape
             movingPiece = nextMovingPiece
-            nextMovingPiece = Self.randomTetrisPiece()
+            nextMovingPiece = Self.randomTetrisPiece(avoid: [previousShape, currentShape])
             return true
         }
     }
